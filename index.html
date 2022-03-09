@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Batagor Adri</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/back.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/bata-log.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Batagor Adri</h1>
+								<h6 class="tm-site-description">Siomay dan Batagor</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								
+								<li class="tm-nav-li"><a href="order.html" class="tm-nav-link">Order</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Selamat Datang di Website Batagor Adri</h2>
+				<p class="col-12 text-center">Batagor adri adalah sebuah UMKM yang berdiri sejak 3 tahun yang lalu, terletak di  Cibeureum Cisarua Bogor, “batagor adri” selain menjual batagor ia juga menjual siomay khas bandung. selain rasanya yang enak, harga dari batagor adri ini juga tidak menguras kantong, cukup mengeluarkan Rp.2000 kamu sudah dapat menikmati batagor adri ini.</p>
+			</header>
+			
+			
+			<div class="tm-paging-links" style="background-color: #8BDB81;">
+				Menu
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/01.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Batagor Bumbu Kacang</h4>
+								
+								<p class="tm-gallery-price">Rp2.000 - Rp12.000</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/02.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Batagor Bumbu Kecap</h4>
+								
+								<p class="tm-gallery-price">Rp2.000 - Rp12.000</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/03.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Batagor Bumbu Rujak</h4>
+								
+								<p class="tm-gallery-price">Rp2.000 - Rp12.000</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/04.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Siomay</h4>
+								
+								<p class="tm-gallery-price">Rp2.000 - Rp12.000</p>
+							</figcaption>
+						</figure>
+					</article>
+					
+				</div> <!-- gallery page 1 -->
+				
+				
+			</div>
+			
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2022 Batagor Adri </p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
